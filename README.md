@@ -1,4 +1,4 @@
-Italian Cup Winning Sides Player Catalog
+## Italian Cup Winning Sides Player Catalog
 
 This repository is dedicated to cataloging Italian Cup winning sides and highlighting the players who participated in these tournaments along with their career statistics. It provides a detailed overview of teams that have won the Italian Cup across different seasons, with a specific focus on player contributions and achievements.
 Features
