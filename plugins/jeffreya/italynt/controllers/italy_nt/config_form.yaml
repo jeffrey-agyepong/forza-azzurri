@@ -1,0 +1,10 @@
+name: Italy_NT
+form: $/jeffreya/italynt/models/player/fields.yaml
+modelClass: Jeffreya\ItalyNt\Models\Player
+defaultRedirect: jeffreya/italynt/italy_nt
+create:
+    redirect: 'jeffreya/italynt/italy_nt/update/:id'
+    redirectClose: jeffreya/italynt/italy_nt
+update:
+    redirect: jeffreya/italynt/italy_nt
+    redirectClose: jeffreya/italynt/italy_nt

@@ -1,0 +1,4 @@
+title: Clubs
+modelClass: Jeffreya\ItalyNt\Models\Club
+toolbar:
+    buttons: reorder_toolbar

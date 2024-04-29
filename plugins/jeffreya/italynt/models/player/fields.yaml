@@ -1,0 +1,59 @@
+fields:
+    player_name:
+        label: 'Player name'
+        span: auto
+        type: text
+    date_of_birth:
+        label: 'Date of birth'
+        span: auto
+        type: datepicker
+    height:
+        label: Height
+        span: auto
+        type: number
+    tournaments:
+        label: Tournaments
+        span: auto
+        type: textarea
+    position:
+        label: Position
+        span: auto
+        type: text
+    other_positions:
+        label: 'Other positions'
+        span: auto
+        type: text
+    club:
+        label: Club
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+tabs:
+    fields:
+        goals:
+            label: Goals
+            span: auto
+            type: number
+            tab: Stats
+        assists:
+            label: Assists
+            span: auto
+            type: number
+            tab: Stats
+        national_caps:
+            label: 'National caps'
+            span: auto
+            type: number
+            tab: Stats
+        picture:
+            label: Picture
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            required: 0
+            type: fileupload
+            tab: Media

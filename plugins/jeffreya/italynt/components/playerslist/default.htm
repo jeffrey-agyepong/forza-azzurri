@@ -1,0 +1,13 @@
+{# {{ __SELF__.index }} #}
+
+<div class="bg-red-500">
+    <div class="flex flex-wrap justify-center gap-4 mx-auto">
+    {% for player in __SELF__.index %}
+    <div>
+    {{ player.player_name }}
+      <img src="{{ player.picture.thumb(400, 400) }}" alt="{{player.player_name}}">
+    </div>
+   
+    {% endfor %}
+    </div>
+</div>

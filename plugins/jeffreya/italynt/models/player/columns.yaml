@@ -1,0 +1,18 @@
+columns:
+    player_name:
+        label: 'Player name'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'Created at'
+        type: datetime
+        searchable: true
+        sortable: true
+    club_id:
+        label: Club
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: club

@@ -1,0 +1,10 @@
+name: Clubs
+form: $/jeffreya/italynt/models/club/fields.yaml
+modelClass: Jeffreya\ItalyNt\Models\Club
+defaultRedirect: jeffreya/italynt/clubs
+create:
+    redirect: 'jeffreya/italynt/clubs/update/:id'
+    redirectClose: jeffreya/italynt/clubs
+update:
+    redirect: jeffreya/italynt/clubs
+    redirectClose: jeffreya/italynt/clubs

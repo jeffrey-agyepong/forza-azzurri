@@ -1,0 +1,33 @@
+plugin:
+    name: 'jeffreya.italynt::lang.plugin.name'
+    description: 'jeffreya.italynt::lang.plugin.description'
+    author: JeffreyA
+    icon: wn-icon-adjust
+    replaces: {  }
+permissions:
+    jeffreya.italynt.player:
+        tab: 'Jeff Rex'
+        label: 'Manage the players'
+    jeffreya.italynt.club:
+        tab: 'Jeff Rex'
+        label: 'Manage the clubs'
+navigation:
+    italynt:
+        label: 'Italy NT'
+        url: jeffreya/italynt/italy_nt
+        icon: icon-soccer-ball-o
+        permissions:
+            - 'jeffreya.italynt*'
+        sideMenu:
+            players:
+                label: Players
+                url: jeffreya/italynt/italy_nt
+                icon: icon-database
+                permissions:
+                    - jeffreya.italynt.player
+            club:
+                label: Club
+                url: jeffreya/italynt/clubs
+                icon: icon-tags
+                permissions:
+                    - jeffreya.italynt.club
