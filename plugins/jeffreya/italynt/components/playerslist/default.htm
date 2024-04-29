@@ -1,13 +1,17 @@
 {# {{ __SELF__.index }} #}
 
-<div class="bg-red-500">
+<div class="">
     <div class="flex flex-wrap justify-center gap-4 mx-auto">
     {% for player in __SELF__.index %}
-    <div>
-    {{ player.player_name }}
-      <img src="{{ player.picture.thumb(400, 400) }}" alt="{{player.player_name}}">
-    </div>
-   
+     <div class="max-w-xxs bg-gray-800 rounded-lg shadow mb-4">
+                    <a href="##">
+                    <img src="{{ player.picture.thumb(300, 300) }}" alt="{{player.player_name}}" class="rounded-t-lg mx-auto object-cover" style="width: 250px; height: 350px;">
+                    </a>
+                    <div class="p-6">
+                    <h5 class="mb-2 text-xl font-bold text-white text-center">{{ player.player_name }}</h5>
+                    <p class="mb-2 text-sm text-white text-center">{{ player.position }}</p>
+                    </div>
+                    </div>   
     {% endfor %}
     </div>
 </div>

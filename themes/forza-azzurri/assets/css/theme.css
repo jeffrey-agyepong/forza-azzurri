@@ -28,5 +28,10 @@
 }
 
 body{
-  background: #1f2937;
+  background: #111827;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
+  margin: 0 auto;
 }
