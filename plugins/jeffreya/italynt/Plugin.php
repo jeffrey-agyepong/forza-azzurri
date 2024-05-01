@@ -7,7 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Jeffreya\italynt\components\PlayersList' => 'PlayersList'
+            'Jeffreya\italynt\components\PlayersList' => 'PlayersList',
+            'Jeffreya\italynt\components\PlayerDetail' => 'playerDetail'
         ];
     }
 

@@ -4,7 +4,7 @@
     <div class="flex flex-wrap justify-center gap-4 mx-auto">
     {% for player in __SELF__.index %}
      <div class="max-w-xxs bg-gray-800 rounded-lg shadow mb-4">
-                    <a href="##">
+                    <a href="{{ 'players/player'|page }}/{{ player.id }}">
                     <img src="{{ player.picture.thumb(300, 300) }}" alt="{{player.player_name}}" class="rounded-t-lg mx-auto object-cover" style="width: 250px; height: 350px;">
                     </a>
                     <div class="p-6">

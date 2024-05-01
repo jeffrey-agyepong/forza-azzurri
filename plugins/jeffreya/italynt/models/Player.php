@@ -12,11 +12,15 @@ class Player extends Model
     use \Winter\Storm\Database\Traits\SoftDelete;
 
     protected $dates = ['deleted_at'];
+    
 
     public $attachOne = [
         'picture' => ['System\Models\File', 'public' => true],
     ];
 
+    public $belongsToMany = [
+        'clubs' => ['Jeffreya\Italynt\Models\Club', 'table' => 'jeffreya_italynt_clubs']
+    ];
 
     /**
      * @var string The database table used by the model.

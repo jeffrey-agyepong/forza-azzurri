@@ -27,6 +27,7 @@ fields:
         label: Club
         nameFrom: name
         descriptionFrom: description
+        multiple: true
         span: auto
         type: relation
 tabs:

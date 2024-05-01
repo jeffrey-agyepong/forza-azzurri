@@ -13,6 +13,9 @@ class Club extends Model
 
     protected $dates = ['deleted_at'];
 
+    public $belongsToMany = [
+        'players' => ['Jeffreya\Italynt\Models\Club', 'table' => 'jeffreya_italynt_clubs']
+    ];
 
     /**
      * @var string The database table used by the model.

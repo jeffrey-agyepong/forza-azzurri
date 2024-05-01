@@ -1,0 +1,10 @@
+{% set player = __SELF__.player %}
+
+<div class="container">
+    <div class="max-w-screen-lg mt-8 px-8">
+      <img src="{{ player.picture.thumb(300, 300) }}" alt="{{player.player_name}}" class="rounded-t-lg object-cover" style="width: 250px; height: 350px;">
+        <p class="text-white mt-4">
+        {{player.player_name}}
+        </p>
+    </div>
+</div>

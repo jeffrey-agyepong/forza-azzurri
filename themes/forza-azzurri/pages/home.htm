@@ -9,9 +9,12 @@ is_hidden = 0
 <div class="jumbotron">
     <div class="container">
         {% content "welcome.htm" %}
-        <div class="flex max-w-screen-lg">
+    </div>
+</div>
+
+<div class="container">
+ <div class="sm:flex max-w-screen-lg">
            {% partial "site/sidebar.htm" %}
         {% component "PlayersList" %}
         </div>
-    </div>
 </div>

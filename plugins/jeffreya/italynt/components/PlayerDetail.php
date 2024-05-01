@@ -2,9 +2,9 @@
 
 use Cms\Classes\ComponentBase;
 use Jeffreya\ItalyNt\Models\Player;
+use Winter\Storm\Support\Facades\URL;
 
-
-class PlayersList extends ComponentBase
+class PlayerDetail extends ComponentBase
 {
     /**
      * Gets the details for the component
@@ -12,7 +12,7 @@ class PlayersList extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name'        => 'PlayersList Component',
+            'name'        => 'PlayerDetail Component',
             'description' => 'No description provided yet...'
         ];
     }
@@ -25,16 +25,13 @@ class PlayersList extends ComponentBase
         return [];
     }
 
-
-    // Return all players by default
     public function onRun(){
-        $this->page['players'] = $this->index();
+        $this->page['return_url'] = Url::previous();
     }
 
-    // Return all players
-    public function index(){
-        return Player::all();
+    public function player(){
+        $id = $this->param('id');
+        $player = Player::findOrFail($id);
+        return $player;
     }
-
-    
 }
